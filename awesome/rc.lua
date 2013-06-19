@@ -12,6 +12,8 @@ require("shifty")
 -- Load Debian menu entries
 require("debian.menu")
 
+require("devmenu")
+
 -- useful for debugging, marks the beginning of rc.lua exec
 print("Entered rc.lua: " .. os.time())
 
@@ -32,7 +34,6 @@ mail = "thunderbird"
 editor = os.getenv("EDITOR") or "editor"
 editor_cmd = terminal .. " -e " .. editor
 browser = "/usr/bin/firefox"
-aptana = "/opt/aptana/AptanaStudio3"
 virtualbox = "/usr/bin/VirtualBox"
 
 -- Default modkey.
@@ -58,7 +59,7 @@ layouts =
 }
 
 -- Define if we want to use titlebar on all applications.
-use_titlebar = false 
+use_titlebar = false
 
 -- Shifty configured tags.
 shifty.config.tags = {
@@ -221,10 +222,10 @@ myawesomemenu = {
 mymainmenu = awful.menu({
    items = {
       {"awesome", myawesomemenu, beautiful.awesome_icon},
-      { "Debian", debian.menu.Debian_menu.Debian },
-		{"open terminal", terminal},
+      {"Debian", debian.menu.Debian_menu.Debian },
+	  {"Developer", devmenu.Dev_menu.Developer },
+	  {"open terminal", terminal},
       {"browser", browser},
-      {"aptana", aptana},
       {"virtualbox", virtualbox}
 	}
 })
