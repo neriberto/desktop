@@ -16,6 +16,7 @@ sudo apt-get install -y synaptic gimp flashplugin-installer synaptic audacity xc
 #   superseding wicked.
 
 sudo apt-get install awesome awesome-extra
+cp -R awesome ~/.config/
 
 # Install Sphinx
 easy_install sphinx
