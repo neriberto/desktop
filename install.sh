@@ -18,8 +18,10 @@ sudo apt-get install -y synaptic gimp flashplugin-installer synaptic audacity xc
 sudo apt-get install awesome awesome-extra
 cp -R awesome ~/.config/
 
+sudo apt-get install vim vim-gnome
+
 # Install Sphinx
-easy_install sphinx
+sudo easy_install sphinx
 
 # Install Apps for generating PDF using Sphinx
 sudo apt-get install -y texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
