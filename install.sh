@@ -29,3 +29,6 @@ sudo apt-get install -y texlive-latex-recommended texlive-latex-extra texlive-fo
 # xterm
 cp xterm/.Xresources ~/.Xresources
 xrdb -merge ~/.Xresources
+
+# Custom bashrc to add git branch in path view using bash
+cp bashrc ~/.bashrc
