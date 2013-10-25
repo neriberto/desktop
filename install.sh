@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# Medibuntu
-sudo wget http://www.medibuntu.org/sources.list.d/$(lsb_release -cs).list --output-document=/etc/apt/sources.list.d/medibuntu.list
-sudo apt-get update && sudo apt-get install medibuntu-keyring && sudo apt-get update
-sudo update-apt-xapian-index
-
 sudo apt-get install -y synaptic gimp flashplugin-installer synaptic audacity xchat-gnome non-free-codecs ubuntu-restricted-extras ttf-mscorefonts-installer
 
 # Awesome Window Manager
@@ -32,3 +27,5 @@ xrdb -merge ~/.Xresources
 
 # Custom bashrc to add git branch in path view using bash
 cp bashrc ~/.bashrc
+
+cp conkyrc ~/.conkyrc
