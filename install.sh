@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt-get install -y synaptic gimp flashplugin-installer synaptic audacity xchat-gnome non-free-codecs ubuntu-restricted-extras ttf-mscorefonts-installer
+sudo apt-get install -y synaptic gimp flashplugin-installer synaptic audacity xchat-gnome non-free-codecs ubuntu-restricted-extras ttf-mscorefonts-installer unzip zip
 
 # Awesome Window Manager
 # awesome-extra contains
@@ -29,3 +29,6 @@ xrdb -merge ~/.Xresources
 cp bashrc ~/.bashrc
 
 cp conkyrc ~/.conkyrc
+
+unzip gitconfig.zip
+mv gitconfig ~/.gitconfig
